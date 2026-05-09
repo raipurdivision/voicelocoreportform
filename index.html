@@ -1,6 +1,9 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +20,7 @@
         }
 
         body {
-            background: linear-gradient(135deg, #add8e6 0%, #87ceeb 100%);
+            background: linear-gradient(135deg, #0d2157 0%, #1a3a8c 100%);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 20px;
             min-height: 100vh;
@@ -33,36 +36,37 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            background: linear-gradient(135deg, #0d1f6e 0%, #0d2157 100%);
             color: white;
-            padding: 30px;
+            padding: 12px 20px;
             text-align: center;
             position: relative;
         }
 
         .header h1 {
-            font-size: 2.5em;
+            font-size: 1.6em;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 2px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            margin-bottom: 10px;
+            margin-bottom: 4px;
         }
 
         .header h2 {
-            font-size: 1.5em;
+            font-size: 1.1em;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
             margin-top: 0;
+            color: goldenrod;
         }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 15px;
+            margin-top: 8px;
         }
 
         .voice-toggle-container {
@@ -270,7 +274,7 @@
 
         .form-container {
             padding: 30px;
-            background: #e6f2ff;
+            background: #c8dff7;
         }
 
         .info-section {
@@ -316,7 +320,7 @@
         .info-field input {
             width: 100%;
             padding: 8px;
-            border: 2px solid #b3d9ff;
+            border: 2px solid #a0b4e0;
             border-radius: 5px;
             font-size: 12px;
             transition: border-color 0.3s, box-shadow 0.3s;
@@ -324,8 +328,8 @@
 
         .info-field input:focus {
             outline: none;
-            border-color: #4a90e2;
-            box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+            border-color: #1e40af;
+            box-shadow: 0 0 8px rgba(30, 64, 175, 0.3);
         }
 
         .checklist-section {
@@ -347,7 +351,7 @@
             padding: 10px;
             margin-bottom: 8px;
             background: #f0f8ff;
-            border-left: 4px solid #4a90e2;
+            border-left: 4px solid #1e3a8a;
             border-radius: 4px;
             font-size: 13px;
         }
@@ -366,7 +370,7 @@
         }
 
         thead {
-            background: linear-gradient(135deg, #5b9dd9 0%, #4a8ec2 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
             color: white;
         }
 
@@ -375,7 +379,7 @@
             text-align: center;
             font-weight: bold;
             font-size: 12px;
-            border: 2px solid #3a7ca5;
+            border: 2px solid #1e3a8a;
             text-transform: uppercase;
         }
 
@@ -397,7 +401,7 @@
 
         td {
             padding: 10px;
-            border: 1px solid #b3d9ff;
+            border: 1px solid #a0b4e0;
             text-align: center;
             font-size: 12px;
         }
@@ -427,7 +431,7 @@
         textarea {
             width: 100%;
             padding: 8px;
-            border: 2px solid #b3d9ff;
+            border: 2px solid #a0b4e0;
             border-radius: 5px;
             font-size: 12px;
             font-weight: bold;
@@ -441,8 +445,8 @@
         select:focus,
         textarea:focus {
             outline: none;
-            border-color: #4a90e2;
-            box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+            border-color: #1e40af;
+            box-shadow: 0 0 8px rgba(30, 64, 175, 0.3);
         }
 
         .remarks-section {
@@ -462,7 +466,7 @@
             width: 100%;
             font-size: 12px;
             min-height: 60px;
-            border: 1px solid #b3d9ff;
+            border: 1px solid #a0b4e0;
         }
 
         .button-group {
@@ -487,7 +491,7 @@
         }
 
         .submit-btn {
-            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
             color: white;
         }
 
@@ -697,8 +701,16 @@
 
     <div class="container">
         <div class="header">
-            <h1>Ambush Check of Stabled Load Report</h1>
-            <h2>Raipur Division</h2>
+            <div style="display:flex; align-items:center; justify-content:center; gap:18px; margin-bottom:8px;">
+                <img src="data:image/png;base64,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" 
+                     alt="Indian Railways Logo" 
+                     style="width:80px; height:80px; border-radius:50%; border:3px solid #fbbf24; box-shadow:0 0 12px rgba(251,191,36,0.5);">
+                <div>
+                    <h1>Ambush Check of Stabled Load Report</h1>
+                    <h2>Raipur Division</h2>
+                </div>
+                
+            </div>
             <div class="header-content">
                 <div class="mobile-toggle-container">
                     <span class="mobile-toggle-label">📱 Mobile View</span>
@@ -728,11 +740,11 @@
                 <div class="info-fields">
                     <div class="info-field">
                         <label for="formDate">Date:</label>
-                        <input type="date" id="formDate">
+                        <input type="text" id="formDate" placeholder="">
                     </div>
                     <div class="info-field">
                         <label for="formTime">Time:</label>
-                        <input type="time" id="formTime">
+                        <input type="text" id="formTime">
                     </div>
                 </div>
                 <div class="info-fields">
@@ -758,7 +770,7 @@
                 <div class="info-fields">
                     <div class="info-field full-width">
                         <label for="bpcNo">BPC No.:</label>
-                        <input type="text" id="bpcNo" placeholder="e.g. 50000863788/SBI Yd ADI/ WR/10.02.26/ Prem.">
+                        <input type="text" id="bpcNo" placeholder=".">
                     </div>
                 </div>
                 <div class="info-fields">
@@ -774,7 +786,7 @@
                 <div class="info-fields">
                     <div class="info-field full-width">
                         <label for="stablingDateTime">Time and Date of Stabling:</label>
-                        <input type="text" id="stablingDateTime" placeholder="e.g. 10:30, 28-03-2026">
+                        <input type="text" id="stablingDateTime" placeholder="">
                     </div>
                 </div>
             </div>
@@ -791,6 +803,7 @@
                         <tr>
                             <th style="width: 40px;">S. No.</th>
                             <th style="width: auto;">Description</th>
+                            <th style="width: 80px;">Yes / No</th>
                             <th style="width: 160px;">Remark</th>
                         </tr>
                     </thead>
@@ -798,51 +811,113 @@
                         <tr>
                             <td class="row-number">1</td>
                             <td class="description-cell">Whether safety chain provided on both end?</td>
+                            <td style="text-align:center;">
+                                <select style="width:70px; padding:4px; border:2px solid #a0b4e0; border-radius:5px; font-size:11px; font-weight:bold;">
+                                    <option value="">-</option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </td>
                             <td><textarea rows="2"></textarea></td>
                         </tr>
                         <tr>
                             <td class="row-number">2</td>
                             <td class="description-cell">Whether iron / wooden skid provided in both ends?</td>
+                            <td style="text-align:center;">
+                                <select style="width:70px; padding:4px; border:2px solid #a0b4e0; border-radius:5px; font-size:11px; font-weight:bold;">
+                                    <option value="">-</option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </td>
                             <td><textarea rows="2"></textarea></td>
                         </tr>
                         <tr>
                             <td class="row-number">3</td>
                             <td class="description-cell">Whether hand brake applied of BV/SLR?</td>
+                            <td style="text-align:center;">
+                                <select style="width:70px; padding:4px; border:2px solid #a0b4e0; border-radius:5px; font-size:11px; font-weight:bold;">
+                                    <option value="">-</option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </td>
                             <td><textarea rows="2"></textarea></td>
                         </tr>
                         <tr>
                             <td class="row-number">4</td>
                             <td class="description-cell">No. of wagons pin down from front</td>
+                            <td style="text-align:center;">
+                                <input type="text" style="width:65px; padding:4px; border:2px solid #a0b4e0; border-radius:5px; font-size:11px; font-weight:bold; text-align:center;">
+                            </td>
                             <td><textarea rows="2"></textarea></td>
                         </tr>
                         <tr>
                             <td class="row-number">5</td>
                             <td class="description-cell">No. of wagons pin down from rear</td>
+                            <td style="text-align:center;">
+                                <input type="text" style="width:65px; padding:4px; border:2px solid #a0b4e0; border-radius:5px; font-size:11px; font-weight:bold; text-align:center;">
+                            </td>
                             <td><textarea rows="2"></textarea></td>
                         </tr>
                         <tr>
                             <td class="row-number">6</td>
                             <td class="description-cell">Whether Pvt. no exchanged with SCR?</td>
+                            <td style="text-align:center;">
+                                <select style="width:70px; padding:4px; border:2px solid #a0b4e0; border-radius:5px; font-size:11px; font-weight:bold;">
+                                    <option value="">-</option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </td>
                             <td><textarea rows="2"></textarea></td>
                         </tr>
                         <tr>
                             <td class="row-number">7</td>
                             <td class="description-cell">Whether the line was blocked entered in the TSR/SM diary in red ink?</td>
+                            <td style="text-align:center;">
+                                <select style="width:70px; padding:4px; border:2px solid #a0b4e0; border-radius:5px; font-size:11px; font-weight:bold;">
+                                    <option value="">-</option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </td>
                             <td><textarea rows="2"></textarea></td>
                         </tr>
                         <tr>
                             <td class="row-number">8</td>
                             <td class="description-cell">Whether line block collar put in panel?</td>
+                            <td style="text-align:center;">
+                                <select style="width:70px; padding:4px; border:2px solid #a0b4e0; border-radius:5px; font-size:11px; font-weight:bold;">
+                                    <option value="">-</option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </td>
                             <td><textarea rows="2"></textarea></td>
                         </tr>
                         <tr>
                             <td class="row-number">9</td>
                             <td class="description-cell">Whether vehicles coupled with other vehicles?</td>
+                            <td style="text-align:center;">
+                                <select style="width:70px; padding:4px; border:2px solid #a0b4e0; border-radius:5px; font-size:11px; font-weight:bold;">
+                                    <option value="">-</option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </td>
                             <td><textarea rows="2"></textarea></td>
                         </tr>
                         <tr>
                             <td class="row-number">10</td>
                             <td class="description-cell">Whether the point is set and locked against the block line?</td>
+                            <td style="text-align:center;">
+                                <select style="width:70px; padding:4px; border:2px solid #a0b4e0; border-radius:5px; font-size:11px; font-weight:bold;">
+                                    <option value="">-</option>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </td>
                             <td><textarea rows="2"></textarea></td>
                         </tr>
                     </tbody>
@@ -860,95 +935,186 @@
                 <textarea id="otherRemarks" rows="2"></textarea>
             </div>
 
-            <div class="info-fields" style="justify-content: flex-end; gap: 20px;">
-                <div class="info-field" style="flex: 0 1 320px; text-align: right;">
-                    <label for="signature" style="text-align: right;">Upload Signature:</label>
-                    <input type="file" id="signature" accept="image/*" onchange="previewSignature(event)">
-                    <div id="signaturePreview" style="margin-top: 10px; display: none;">
-                        <img id="signatureImg" style="max-width: 200px; max-height: 100px; border: 2px solid #4a90e2; border-radius: 5px;">
+            <!-- CLI Signature Row: CLI-1 LEFT | CLI-2 RIGHT -->
+            <div style="display:flex; gap:20px; margin-top:10px; flex-wrap:wrap;">
+
+                <!-- ── CLI 1 (LEFT) ── -->
+                <div style="flex:1 1 300px; background:#f0f8ff; border:2px solid #b3d9ff; border-radius:10px; padding:16px;">
+                    <div style="font-weight:bold; color:#1a237e; font-size:13px; margin-bottom:10px; text-align:center; letter-spacing:1px;">
+                        👤 CLI - 1
                     </div>
-                </div>
-                <div class="info-field" style="flex: 0 1 320px; text-align: right;">
-                    <label for="cliName" style="text-align: right;">CLI Name and HQ:</label>
-                    <select id="cliName">
+                    <label style="display:block; font-weight:bold; font-size:12px; color:#2c3e50; margin-bottom:4px;">CLI Name and HQ:</label>
+                    <select id="cliName" style="width:100%; padding:8px; border:2px solid #b3d9ff; border-radius:5px; font-size:12px; font-weight:bold; margin-bottom:12px;">
                         <option value="">Select CLI Name and HQ</option>
                         <option value="A K REDDY/CLI/BIA">A K REDDY/CLI/BIA</option>
                         <option value="A.R.TARAM/CLI/BIA">A.R. TARAM/CLI/BIA</option>
-                                <option value="ABDUL MOIN KHAN/CLI/BIA">ABDUL MOIN KHAN/CLI/BIA</option>
-                                <option value="AKHILESH KUMAR/CLI/BIA">AKHILESH KUMAR/CLI/BIA</option>
-                                <option value="AMIT KUMAR BANKURE/CLI/BYT">AMIT KUMAR BANKURE/CLI/BYT</option>
-                                <option value="ANANT PRAKASH SHRIVASTAVA/CLI/BIA">ANANT PRAKASH SHRIVASTAVA/CLI/BIA</option>
-                                <option value="ANIL KUMAR/CLI/BIA">ANIL KUMAR/CLI/BIA</option>
-                                <option value="ANKIT RAM KANT/CLI/BIA">ANKIT RAM KANT/CLI/BIA</option>
-                                <option value="AVON KUMAR SAHU/CLI/R">AVON KUMAR SAHU/CLI/R</option>
-                                <option value="ASHISH WANJARI/CLI/BYT">ASHISH WANJARI/CLI/BYT</option>
-                                <option value="B B KUSHWAHA/CLI/BIA">B B KUSHWAHA/CLI/BIA</option>
-                                <option value="B K HARMUKH/CLI/BIA">B K HARMUKH/CLI/BIA</option>
-                                <option value="B. K. SAHA/CLI/BIA">B. K. SAHA/CLI/BIA</option>
-                                <option value="B.K.SONI/CLI/BIA">B.K.SONI/CLI/BIA</option>
-                                <option value="BHARAT SINGH ATBHAIYYA/CLI/R">BHARAT SINGH ATBHAIYYA/CLI/R</option>
-                                <option value="BHOLI CHAUDHARY/CLI/R">BHOLI CHAUDHARY/CLI/R</option>
-                                <option value="BIKRAMJIT KANRAR/CLI/BIA">BIKRAMJIT KANRAR/CLI/BIA</option>
-                                <option value="BINOD KUMAR RAM/CLI/R">BINOD KUMAR RAM/CLI/R</option>
-                                <option value="CLI NAME/CLI/BIA">CLI NAME/CLI/BIA</option>
-                                <option value="DEEPANNITA PUNTAMBEKAR/CLI/BIA">DEEPANNITA PUNTAMBEKAR/CLI/BIA</option>
-                                <option value="DILLI RAO/CLI/BYT">DILLI RAO/CLI/BYT</option>
-                                <option value="G. C. BISWAS/CLI/R">G. C. BISWAS/CLI/R</option>
-                                <option value="G. V. R. K. MADHU/CLI/BIA">G. V. R. K. MADHU/CLI/BIA</option>
-                                <option value="GIRDHARI LAL/CLI/R">GIRDHARI LAL/CLI/R</option>
-                                <option value="JAISHANKAR SHARMA/CLI/BIA">JAISHANKAR SHARMA/CLI/BIA</option>
-                                <option value="JITENDRA KUMAR MISHRA/CLI/BYT">JITENDRA KUMAR MISHRA/CLI/BYT</option>
-                                <option value="K P LAHARE/CLI/R">K P LAHRE/CLI/BIA</option>
-                                <option value="K P HIRWANI/CLI/BYT">K P HIRWANI/CLI/BYT</option>
-                                <option value="K. K. SAHU/CLI/BIA">K. K. SAHU/CLI/BIA</option>
-                                <option value="KHUSHAL SINGH/CLI/DRZ">KHUSHAL SINGH/CLI/DRZ</option>
-                                <option value="MAHESHWAR/CLI/BIA">MAHESHWAR/CLI/BIA</option>
-                                <option value="MANOJ KUMAR SAO/CLI/R">MANOJ KUMAR SAO/CLI/R</option>
-                                <option value="MANSUKH LAL CHANDRAKAR/CLI/R">MANSUKH LAL CHANDRAKAR/CLI/R</option>
-                                <option value="MOHIT KUMAR SWARNKAR/CLI/BIA">MOHIT KUMAR SWARNKAR/CLI/BIA</option>
-                                <option value="N. R. KARPAL/CLI/BIA">N. R. KARPAL/CLI/BIA</option>
-                                <option value="N.K. BHOI/CLI/R">N.K. BHOI/CLI/R</option>
-                                <option value="NITIN KUKDE/CLI/BYT">NITIN KUKDE/CLI/BYT</option>
-                                <option value="NIRMAL KUMAR/CLI/BYT">NIRMAL KUMAR/CLI/BYT</option>
-                                <option value="P.K. PATEL/CLI/BIA">P.K. PATEL/CLI/BIA</option>
-                                <option value="PANKAJ KUMAR SINGH/CLI/BIA">PANKAJ KUMAR SINGH/CLI/BIA</option>
-                                <option value="PAWAN KUMAR SINGH/CLI/BIA">PAWAN KUMAR SINGH/CLI/BIA
-                                <option value="PURAN LAL PATEL/CLI/BYT">PURAN LAL PATEL/CLI/BYT</option>
-                                <option value="RAJENDRA KUMAR/CLI/BIA">RAJENDRA KUMAR/CLI/BIA</option>
-                                <option value="PALAK RAM ALENDRA/CLI/DRZ">PALAK RAM ALENDRA/CLI/DRZ</option>
-                                <option value="RAJESH KUMAR DESHMUKH/CLI/R">RAJESH KUMAR DESHMUKH/CLI/R</option>
-                                <option value="RAJNEESH BENERJEE/CLI/BIA">RAJNEESH BENERJEE/CLI/BIA</option>
-                                <option value="RANJEET SINGH/CLI/BYT">RANJEET SINGH/CLI/BYT</option>
-                                <option value="RAKESH KUMAR KOSTA/CLI/DRZ">RAKESH KUMAR KOSTA/CLI/DRZ</option>
-                                <option value="RAJESH KUMAR DESHMUKH/CLI/R/CLI/DRZ">RAJESH KUMAR DESHMUKH/CLI/R</option>
-                                <option value="S K GAUTAM/CLI/BIA">S K GAUTAM/CLI/BIA</option>
-                                <option value="S S HUSSAIN/CLI/BIA">S S HUSSAIN/CLI/BIA</option>
-                                <option value="S. C. RAI/CLI/BIA">S. C. RAI/CLI/BIA</option>
-                                <option value="S. K. SINGH/CLI/BIA">S. K. SINGH/CLI/BIA</option>
-                                <option value="S. L. SONI/CLI/R">S. L. SONI/CLI/R</option>
-                                <option value="SANJAY KUMAR ROY/CLI/BIA">SANJAY KUMAR ROY/CLI/BIA</option>
-                                <option value="SANJAY SINGH/CLI/BYT">SANJAY SINGH/CLI/BYT</option>
-                                <option value="SANJEEV KUMAR SHARMA/CLI/BIA">SANJEEV KUMAR SHARMA/CLI/BIA</option>
-                                <option value="SANTOSH KUAMAR PATKAR/CLI/BIA">SANTOSH KUAMAR PATKAR/CLI/BIA</option>
-                                <option value="SHAILENDRA SINGH/CLI/BIA">SHAILENDRA SINGH/CLI/BIA</option>
-                                <option value="SUNDEEP KUMAR SHARMA/CLI/BIA">SUNDEEP KUMAR SHARMA/CLI/BIA</option>
-                                <option value="SUNIL KUMAR DEWANGAN/CLI/BIA">SUNIL KUMAR DEWANGAN/CLI/BIA</option>
-                                <option value="SANAT KUMAR SAHU/CLI/DRZ">SANAT KUMAR SAHU/CLI/DRZ</option>
-                                <option value="TEST ID/CLI/BIA">TEST ID/CLI/BIA</option>
-                                <option value="V.K. BHAGAT/CLI/R">V.K. BHAGAT/CLI/R</option>
-                                <option value="VIJAY KUMAR ARYA/CLI/BIA">VIJAY KUMAR ARYA/CLI/BIA</option>
-                                <option value="VIKAS SHENDE/CLI/R">VIKAS SHENDE/CLI/R</option>
-                                <option value="VINAY KUMAR VINCHURE/CLI/BIA">VINAY KUMAR VINCHURE/CLI/BIA</option>
-                                <option value="VINAY PANTAWANE/CLI/BIA">VINAY PANTAWANE/CLI/BIA</option>
-                                <option value="Y. RAMU/CLI/BIA">Y. RAMU/CLI/BIA</option>
-                                <option value="YOGESH KUMAR MIHAULIA/CLI/BIA">YOGESH KUMAR MIHAULIA/CLI/BIA</option>
-                                <option value="OTHERS">OTHERS</option>
+                        <option value="ABDUL MOIN KHAN/CLI/BIA">ABDUL MOIN KHAN/CLI/BIA</option>
+                        <option value="AKHILESH KUMAR/CLI/BIA">AKHILESH KUMAR/CLI/BIA</option>
+                        <option value="AMIT KUMAR BANKURE/CLI/BYT">AMIT KUMAR BANKURE/CLI/BYT</option>
+                        <option value="ANANT PRAKASH SHRIVASTAVA/CLI/BIA">ANANT PRAKASH SHRIVASTAVA/CLI/BIA</option>
+                        <option value="ANIL KUMAR/CLI/BIA">ANIL KUMAR/CLI/BIA</option>
+                        <option value="ANKIT RAM KANT/CLI/BIA">ANKIT RAM KANT/CLI/BIA</option>
+                        <option value="AVON KUMAR SAHU/CLI/R">AVON KUMAR SAHU/CLI/R</option>
+                        <option value="ASHISH WANJARI/CLI/BYT">ASHISH WANJARI/CLI/BYT</option>
+                        <option value="B B KUSHWAHA/CLI/BIA">B B KUSHWAHA/CLI/BIA</option>
+                        <option value="B K HARMUKH/CLI/BIA">B K HARMUKH/CLI/BIA</option>
+                        <option value="B. K. SAHA/CLI/BIA">B. K. SAHA/CLI/BIA</option>
+                        <option value="B.K.SONI/CLI/BIA">B.K.SONI/CLI/BIA</option>
+                        <option value="BHARAT SINGH ATBHAIYYA/CLI/R">BHARAT SINGH ATBHAIYYA/CLI/R</option>
+                        <option value="BHOLI CHAUDHARY/CLI/R">BHOLI CHAUDHARY/CLI/R</option>
+                        <option value="BIKRAMJIT KANRAR/CLI/BIA">BIKRAMJIT KANRAR/CLI/BIA</option>
+                        <option value="BINOD KUMAR RAM/CLI/R">BINOD KUMAR RAM/CLI/R</option>
+                        <option value="CLI NAME/CLI/BIA">CLI NAME/CLI/BIA</option>
+                        <option value="DEEPANNITA PUNTAMBEKAR/CLI/BIA">DEEPANNITA PUNTAMBEKAR/CLI/BIA</option>
+                        <option value="DILLI RAO/CLI/BYT">DILLI RAO/CLI/BYT</option>
+                        <option value="G. C. BISWAS/CLI/R">G. C. BISWAS/CLI/R</option>
+                        <option value="G. V. R. K. MADHU/CLI/BIA">G. V. R. K. MADHU/CLI/BIA</option>
+                        <option value="GIRDHARI LAL/CLI/R">GIRDHARI LAL/CLI/R</option>
+                        <option value="JAISHANKAR SHARMA/CLI/BIA">JAISHANKAR SHARMA/CLI/BIA</option>
+                        <option value="JITENDRA KUMAR MISHRA/CLI/BYT">JITENDRA KUMAR MISHRA/CLI/BYT</option>
+                        <option value="K P LAHARE/CLI/R">K P LAHRE/CLI/BIA</option>
+                        <option value="K P HIRWANI/CLI/BYT">K P HIRWANI/CLI/R</option>
+                        <option value="K. K. SAHU/CLI/BIA">K. K. SAHU/CLI/BIA</option>
+                        <option value="KHUSAL SINGH/CLI/DRZ">KHUSAL SINGH/CLI/DRZ</option>
+                        <option value="MAHESHWAR/CLI/BIA">MAHESHWAR/CLI/BIA</option>
+                        <option value="MANOJ KUMAR SAO/CLI/R">MANOJ KUMAR SAO/CLI/R</option>
+                        <option value="MANSUKH LAL CHANDRAKAR/CLI/R">MANSUKH LAL CHANDRAKAR/CLI/R</option>
+                        <option value="MOHIT KUMAR SWARNKAR/CLI/BIA">MOHIT KUMAR SWARNKAR/CLI/BIA</option>
+                        <option value="N. R. KARPAL/CLI/BIA">N. R. KARPAL/CLI/BIA</option>
+                        <option value="N.K. BHOI/CLI/R">N.K. BHOI/CLI/R</option>
+                        <option value="NITIN KUKDE/CLI/BYT">NITIN KUKDE/CLI/BYT</option>
+                        <option value="NIRMAL KUMAR/CLI/BYT">NIRMAL KUMAR/CLI/BYT</option>
+                        <option value="P.K. PATEL/CLI/BIA">P.K. PATEL/CLI/BIA</option>
+                        <option value="PANKAJ KUMAR SINGH/CLI/BIA">PANKAJ KUMAR SINGH/CLI/BIA</option>
+                        <option value="PAWAN KUMAR SINGH/CLI/BIA">PAWAN KUMAR SINGH/CLI/BIA</option>
+                        <option value="PURAN LAL PATEL/CLI/BYT">PURAN LAL PATEL/CLI/BYT</option>
+                        <option value="RAJENDRA KUMAR/CLI/BIA">RAJENDRA KUMAR/CLI/BIA</option>
+                        <option value="PALAK RAM ALENDRA/CLI/DRZ">PALAK RAM ALENDRA/CLI/DRZ</option>
+                        <option value="RAJESH KUMAR DESHMUKH/CLI/R">RAJESH KUMAR DESHMUKH/CLI/R</option>
+                        <option value="RAJNEESH BENERJEE/CLI/BIA">RAJNEESH BENERJEE/CLI/BIA</option>
+                        <option value="RANJEET SINGH/CLI/BYT">RANJEET SINGH/CLI/BYT</option>
+                        <option value="RAKESH KUMAR KOSTA/CLI/DRZ">RAKESH KUMAR KOSTA/CLI/DRZ</option>
+                        <option value="S K GAUTAM/CLI/BIA">S K GAUTAM/CLI/BIA</option>
+                        <option value="S S HUSSAIN/CLI/BIA">S S HUSSAIN/CLI/BIA</option>
+                        <option value="S. C. RAI/CLI/BIA">S. C. RAI/CLI/BIA</option>
+                        <option value="S. K. SINGH/CLI/BIA">S. K. SINGH/CLI/BIA</option>
+                        <option value="S. L. SONI/CLI/R">S. L. SONI/CLI/R</option>
+                        <option value="SANJAY KUMAR ROY/CLI/BIA">SANJAY KUMAR ROY/CLI/BIA</option>
+                        <option value="SANJAY SINGH/CLI/BYT">SANJAY SINGH/CLI/BYT</option>
+                        <option value="SANJEEV KUMAR SHARMA/CLI/BIA">SANJEEV KUMAR SHARMA/CLI/BIA</option>
+                        <option value="SANTOSH KUAMAR PATKAR/CLI/BIA">SANTOSH KUAMAR PATKAR/CLI/BIA</option>
+                        <option value="SHAILENDRA SINGH/CLI/BIA">SHAILENDRA SINGH/CLI/BIA</option>
+                        <option value="SUNDEEP KUMAR SHARMA/CLI/BIA">SUNDEEP KUMAR SHARMA/CLI/BIA</option>
+                        <option value="SUNIL KUMAR DEWANGAN/CLI/BIA">SUNIL KUMAR DEWANGAN/CLI/BIA</option>
+                        <option value="SANAT KUMAR SAHU/CLI/DRZ">SANAT KUMAR SAHU/CLI/DRZ</option>
+                        <option value="TEST ID/CLI/BIA">TEST ID/CLI/BIA</option>
+                        <option value="V.K. BHAGAT/CLI/R">V.K. BHAGAT/CLI/R</option>
+                        <option value="VIJAY KUMAR ARYA/CLI/BIA">VIJAY KUMAR ARYA/CLI/BIA</option>
+                        <option value="VIKAS SHENDE/CLI/BIA">VIKAS SHENDE/CLI/BIA</option>
+                        <option value="VINAY KUMAR VINCHURE/CLI/BIA">VINAY KUMAR VINCHURE/CLI/BIA</option>
+                        <option value="VINAY PANTAWANE/CLI/BIA">VINAY PANTAWANE/CLI/BIA</option>
+                        <option value="Y. RAMU/CLI/BIA">Y. RAMU/CLI/BIA</option>
+                        <option value="YOGESH KUMAR MIHAULIA/CLI/BIA">YOGESH KUMAR MIHAULIA/CLI/BIA</option>
                         <option value="OTHERS">OTHERS</option>
                     </select>
+                    <label style="display:block; font-weight:bold; font-size:12px; color:#2c3e50; margin-bottom:4px;">Upload Signature - 1:</label>
+                    <input type="file" id="signature" accept="image/*" onchange="previewSignature(event)" style="width:100%; font-size:12px;">
+                    <div id="signaturePreview" style="margin-top:8px; display:none; text-align:center;">
+                        <img id="signatureImg" style="max-width:180px; max-height:90px; border:2px solid #4a90e2; border-radius:5px;">
+                    </div>
                 </div>
+
+                <!-- ── CLI 2 (RIGHT) ── -->
+                <div style="flex:1 1 300px; background:#fff8e1; border:2px solid #ffe082; border-radius:10px; padding:16px;">
+                    <div style="font-weight:bold; color:#e65100; font-size:13px; margin-bottom:10px; text-align:center; letter-spacing:1px;">
+                        👤 CLI - 2
+                    </div>
+                    <label style="display:block; font-weight:bold; font-size:12px; color:#2c3e50; margin-bottom:4px;">CLI Name and HQ:</label>
+                    <select id="cliName2" style="width:100%; padding:8px; border:2px solid #ffe082; border-radius:5px; font-size:12px; font-weight:bold; margin-bottom:12px;">
+                        <option value="">Select CLI Name and HQ</option>
+                        <option value="A K REDDY/CLI/BIA">A K REDDY/CLI/BIA</option>
+                        <option value="A.R.TARAM/CLI/BIA">A.R. TARAM/CLI/BIA</option>
+                        <option value="ABDUL MOIN KHAN/CLI/BIA">ABDUL MOIN KHAN/CLI/BIA</option>
+                        <option value="AKHILESH KUMAR/CLI/BIA">AKHILESH KUMAR/CLI/BIA</option>
+                        <option value="AMIT KUMAR BANKURE/CLI/BYT">AMIT KUMAR BANKURE/CLI/BYT</option>
+                        <option value="ANANT PRAKASH SHRIVASTAVA/CLI/BIA">ANANT PRAKASH SHRIVASTAVA/CLI/BIA</option>
+                        <option value="ANIL KUMAR/CLI/BIA">ANIL KUMAR/CLI/BIA</option>
+                        <option value="ANKIT RAM KANT/CLI/BIA">ANKIT RAM KANT/CLI/BIA</option>
+                        <option value="AVON KUMAR SAHU/CLI/R">AVON KUMAR SAHU/CLI/R</option>
+                        <option value="ASHISH WANJARI/CLI/BYT">ASHISH WANJARI/CLI/BYT</option>
+                        <option value="B B KUSHWAHA/CLI/BIA">B B KUSHWAHA/CLI/BIA</option>
+                        <option value="B K HARMUKH/CLI/BIA">B K HARMUKH/CLI/BIA</option>
+                        <option value="B. K. SAHA/CLI/BIA">B. K. SAHA/CLI/BIA</option>
+                        <option value="B.K.SONI/CLI/BIA">B.K.SONI/CLI/BIA</option>
+                        <option value="BHARAT SINGH ATBHAIYYA/CLI/R">BHARAT SINGH ATBHAIYYA/CLI/R</option>
+                        <option value="BHOLI CHAUDHARY/CLI/R">BHOLI CHAUDHARY/CLI/R</option>
+                        <option value="BIKRAMJIT KANRAR/CLI/BIA">BIKRAMJIT KANRAR/CLI/BIA</option>
+                        <option value="BINOD KUMAR RAM/CLI/R">BINOD KUMAR RAM/CLI/R</option>
+                        <option value="CLI NAME/CLI/BIA">CLI NAME/CLI/BIA</option>
+                        <option value="DEEPANNITA PUNTAMBEKAR/CLI/BIA">DEEPANNITA PUNTAMBEKAR/CLI/BIA</option>
+                        <option value="DILLI RAO/CLI/BYT">DILLI RAO/CLI/BYT</option>
+                        <option value="G. C. BISWAS/CLI/R">G. C. BISWAS/CLI/R</option>
+                        <option value="G. V. R. K. MADHU/CLI/BIA">G. V. R. K. MADHU/CLI/BIA</option>
+                        <option value="GIRDHARI LAL/CLI/R">GIRDHARI LAL/CLI/R</option>
+                        <option value="JAISHANKAR SHARMA/CLI/BIA">JAISHANKAR SHARMA/CLI/BIA</option>
+                        <option value="JITENDRA KUMAR MISHRA/CLI/BYT">JITENDRA KUMAR MISHRA/CLI/BYT</option>
+                        <option value="K P LAHARE/CLI/R">K P LAHRE/CLI/BIA</option>
+                        <option value="K P HIRWANI/CLI/BYT">K P HIRWANI/CLI/R</option>
+                        <option value="K. K. SAHU/CLI/BIA">K. K. SAHU/CLI/BIA</option>
+                        <option value="KHUSAL SINGH/CLI/DRZ">KHUSAL SINGH/CLI/DRZ</option>
+                        <option value="MAHESHWAR/CLI/BIA">MAHESHWAR/CLI/BIA</option>
+                        <option value="MANOJ KUMAR SAO/CLI/R">MANOJ KUMAR SAO/CLI/R</option>
+                        <option value="MANSUKH LAL CHANDRAKAR/CLI/R">MANSUKH LAL CHANDRAKAR/CLI/R</option>
+                        <option value="MOHIT KUMAR SWARNKAR/CLI/BIA">MOHIT KUMAR SWARNKAR/CLI/BIA</option>
+                        <option value="N. R. KARPAL/CLI/BIA">N. R. KARPAL/CLI/BIA</option>
+                        <option value="N.K. BHOI/CLI/R">N.K. BHOI/CLI/R</option>
+                        <option value="NITIN KUKDE/CLI/BYT">NITIN KUKDE/CLI/BYT</option>
+                        <option value="NIRMAL KUMAR/CLI/BYT">NIRMAL KUMAR/CLI/BYT</option>
+                        <option value="P.K. PATEL/CLI/BIA">P.K. PATEL/CLI/BIA</option>
+                        <option value="PANKAJ KUMAR SINGH/CLI/BIA">PANKAJ KUMAR SINGH/CLI/BIA</option>
+                        <option value="PAWAN KUMAR SINGH/CLI/BIA">PAWAN KUMAR SINGH/CLI/BIA</option>
+                        <option value="PURAN LAL PATEL/CLI/BYT">PURAN LAL PATEL/CLI/BYT</option>
+                        <option value="RAJENDRA KUMAR/CLI/BIA">RAJENDRA KUMAR/CLI/BIA</option>
+                        <option value="PALAK RAM ALENDRA/CLI/DRZ">PALAK RAM ALENDRA/CLI/DRZ</option>
+                        <option value="RAJESH KUMAR DESHMUKH/CLI/R">RAJESH KUMAR DESHMUKH/CLI/R</option>
+                        <option value="RAJNEESH BENERJEE/CLI/BIA">RAJNEESH BENERJEE/CLI/BIA</option>
+                        <option value="RANJEET SINGH/CLI/BYT">RANJEET SINGH/CLI/BYT</option>
+                        <option value="RAKESH KUMAR KOSTA/CLI/DRZ">RAKESH KUMAR KOSTA/CLI/DRZ</option>
+                        <option value="S K GAUTAM/CLI/BIA">S K GAUTAM/CLI/BIA</option>
+                        <option value="S S HUSSAIN/CLI/BIA">S S HUSSAIN/CLI/BIA</option>
+                        <option value="S. C. RAI/CLI/BIA">S. C. RAI/CLI/BIA</option>
+                        <option value="S. K. SINGH/CLI/BIA">S. K. SINGH/CLI/BIA</option>
+                        <option value="S. L. SONI/CLI/R">S. L. SONI/CLI/R</option>
+                        <option value="SANJAY KUMAR ROY/CLI/BIA">SANJAY KUMAR ROY/CLI/BIA</option>
+                        <option value="SANJAY SINGH/CLI/BYT">SANJAY SINGH/CLI/BYT</option>
+                        <option value="SANJEEV KUMAR SHARMA/CLI/BIA">SANJEEV KUMAR SHARMA/CLI/BIA</option>
+                        <option value="SANTOSH KUAMAR PATKAR/CLI/BIA">SANTOSH KUAMAR PATKAR/CLI/BIA</option>
+                        <option value="SHAILENDRA SINGH/CLI/BIA">SHAILENDRA SINGH/CLI/BIA</option>
+                        <option value="SUNDEEP KUMAR SHARMA/CLI/BIA">SUNDEEP KUMAR SHARMA/CLI/BIA</option>
+                        <option value="SUNIL KUMAR DEWANGAN/CLI/BIA">SUNIL KUMAR DEWANGAN/CLI/BIA</option>
+                        <option value="SANAT KUMAR SAHU/CLI/DRZ">SANAT KUMAR SAHU/CLI/DRZ</option>
+                        <option value="TEST ID/CLI/BIA">TEST ID/CLI/BIA</option>
+                        <option value="V.K. BHAGAT/CLI/R">V.K. BHAGAT/CLI/R</option>
+                        <option value="VIJAY KUMAR ARYA/CLI/BIA">VIJAY KUMAR ARYA/CLI/BIA</option>
+                        <option value="VIKAS SHENDE/CLI/BIA">VIKAS SHENDE/CLI/BIA</option>
+                        <option value="VINAY KUMAR VINCHURE/CLI/BIA">VINAY KUMAR VINCHURE/CLI/BIA</option>
+                        <option value="VINAY PANTAWANE/CLI/BIA">VINAY PANTAWANE/CLI/BIA</option>
+                        <option value="Y. RAMU/CLI/BIA">Y. RAMU/CLI/BIA</option>
+                        <option value="YOGESH KUMAR MIHAULIA/CLI/BIA">YOGESH KUMAR MIHAULIA/CLI/BIA</option>
+                        <option value="OTHERS">OTHERS</option>
+                    </select>
+                    <label style="display:block; font-weight:bold; font-size:12px; color:#2c3e50; margin-bottom:4px;">Upload Signature - 2:</label>
+                    <input type="file" id="signature2" accept="image/*" onchange="previewSignature2(event)" style="width:100%; font-size:12px;">
+                    <div id="signaturePreview2" style="margin-top:8px; display:none; text-align:center;">
+                        <img id="signatureImg2" style="max-width:180px; max-height:90px; border:2px solid #e67e22; border-radius:5px;">
+                    </div>
+                </div>
+
             </div>
 
             <input type="file" id="draftFileInput" accept=".json" onchange="handleDraftUpload(event)">
+
+            <div id="message" class="message"></div>
 
             <div class="button-group">
                 <button class="save-draft-btn" onclick="saveDraft()">Save Draft</button>
@@ -956,8 +1122,6 @@
                 <button class="submit-btn" onclick="submitForm()">Submit</button>
                 <button class="pdf-btn" onclick="generatePDF()">Generate PDF</button>
             </div>
-
-            <div id="message" class="message"></div>
         </div>
     </div>
 
@@ -990,6 +1154,20 @@
             }
         }
 
+        function previewSignature2(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const preview = document.getElementById('signaturePreview2');
+                    const img = document.getElementById('signatureImg2');
+                    img.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
         function updateRowNumbers() {
             const rows = document.querySelectorAll('#tableBody tr');
             rows.forEach((row, index) => {
@@ -997,7 +1175,17 @@
             });
         }
 
+        const SHEET_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx7WDM2HP5ukVhVtQCS2fwdJ2BvKnv9xszb8gMMK273j90Njwb5_nmtfgikZSdGYReciw/exec';
+
+        // State tracking
+        let formSubmitted = false;
+        let pdfAttemptedBeforeSubmit = false;
+
         function submitForm() {
+            if (formSubmitted) {
+                showMessage('⚠️ Data already submitted. You cannot submit again.', 'error');
+                return;
+            }
             const rows = document.querySelectorAll('#tableBody tr');
             const data = {
                 date: document.getElementById('formDate').value,
@@ -1013,7 +1201,8 @@
                 records: [],
                 irregularities: document.getElementById('irregularities').value,
                 otherRemarks: document.getElementById('otherRemarks').value,
-                cliName: document.getElementById('cliName').value
+                cliName: document.getElementById('cliName').value,
+                cliName2: document.getElementById('cliName2').value
             };
 
             rows.forEach((row, index) => {
@@ -1026,10 +1215,46 @@
             });
 
             console.log('Form Data:', data);
-            showMessage('Form submitted successfully! Check console for data.', 'success');
+
+            // ── Save to Google Sheets ──────────────────────────────────
+            showMessage('⏳ Saving to Google Sheets...', 'success');
+
+            const params = new URLSearchParams();
+            params.append('sheet',              'Stable Load');
+            params.append('cliName',            data.cliName);          // CLI-2 dropdown
+            params.append('cliName2',           data.cliName2);         // CLI-1 dropdown
+            params.append('cliName1',           data.staff1);           // Staff Particular 1
+            params.append('cliName3',           data.staff2);           // Staff Particular 2
+            params.append('bpcNo',              data.bpcNo);
+            params.append('date',               data.date);
+            params.append('place',              data.place);
+            params.append('trainNo',            data.trainNo);
+            params.append('locoNo',             data.lineNo);           // Line No mapped to Loco No column
+            params.append('irregularityFound',  data.irregularities);
+            params.append('otherRemarks',       data.otherRemarks);
+            params.append('time',               data.time);
+
+            fetch(SHEET_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: params.toString()
+            })
+            .then(() => {
+                showMessage('✅ Data saved to Google Sheets (Stable Load) successfully!', 'success');
+                    formSubmitted = true;
+            })
+            .catch(err => {
+                console.error('Sheet save error:', err);
+                showMessage('❌ Failed to save to Google Sheets. Check your internet connection.', 'error');
+            });
         }
 
         function generatePDF() {
+            if (!formSubmitted) {
+                showMessage('⚠️ Please submit the data first before generating the PDF.', 'error');
+                return;
+            }
             const { jsPDF } = window.jspdf;
             const doc = new jsPDF('p', 'mm', 'a4');
 
@@ -1038,16 +1263,12 @@
             const margin       = 10;
             const contentWidth = pageWidth - margin * 2;
 
-            // ── Colours (SFT-7 theme) ──────────────────────────────────
-            const navyBlue  = [13,  71, 161];
-            const goldYellow= [251, 192,  45];
-            const sectionBg = [30,  90, 160];
+            // ── Colours — match form header exactly ───────────────────
+            const navyBlue  = [13,  31, 110];   // #0d1f6e (form header)
+            const goldYellow= [251, 191,  36];   // #fbbf24 (form gold border)
+            const sectionBg = [13,  33, 87];
             const lightBlue = [227, 242, 253];
             const borderClr = [100, 160, 220];
-
-            // ── INDIAN RAILWAYS LOGO (embedded) ───────────────────────
-            const LOGO_DATA = 'data:image/png;base64,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';
-
             // ── COLLECT FORM VALUES ────────────────────────────────────
             const formDate         = document.getElementById('formDate').value || '';
             const formTime         = document.getElementById('formTime').value || '';
@@ -1064,15 +1285,15 @@
             const cliName          = document.getElementById('cliName').value || '';
 
             // ── LAYOUT CONSTANTS ──────────────────────────────────────
-            const FS_TITLE    = 13;
-            const FS_SUBTITLE = 10;
+            const FS_TITLE    = 17;
+            const FS_SUBTITLE = 12;
             const FS_SECTION  = 9;
             const FS_FIELD    = 10;
             const FS_TABLE_H  = 9;
             const FS_TABLE_B  = 9;
             const FS_FOOTER   = 8;
 
-            const HEADER_H         = 32;   // navy header height
+            const HEADER_H         = 38;   // taller header to fit larger fonts
             const GOLD_H           = 2;    // gold stripe height
             const SEC_H            = 7;    // section bar height
             const ROW_GAP          = 8;    // info row spacing
@@ -1091,17 +1312,22 @@
             doc.setTextColor(255, 255, 255);
             doc.setFontSize(FS_TITLE);
             doc.setFont(undefined, 'bold');
-            doc.text('AMBUSH CHECK OF STABLED LOAD REPORT', textCentreX, 11, { align: 'center' });
+            doc.text('AMBUSH CHECK OF STABLED LOAD REPORT', textCentreX, 13, { align: 'center' });
 
+            // Subheading — navy background band, same colour as header
+            const subBandY = 17;
+            const subBandH = 10;
+            doc.setFillColor(...navyBlue);
+            doc.rect(0, subBandY, pageWidth, subBandH, 'F');
             doc.setTextColor(...goldYellow);
             doc.setFontSize(FS_SUBTITLE);
             doc.setFont(undefined, 'bold');
-            doc.text('RAIPUR DIVISION', textCentreX, 19, { align: 'center' });
+            doc.text('RAIPUR DIVISION', textCentreX, subBandY + 7, { align: 'center' });
 
             doc.setTextColor(255, 255, 255);
             doc.setFontSize(8);
             doc.setFont(undefined, 'normal');
-            doc.text('Detailed Departmental Inspection Checklist', textCentreX, 26, { align: 'center' });
+            doc.text('Detailed Departmental Inspection Checklist', textCentreX, subBandY + subBandH + 5, { align: 'center' });
 
             // ── SECTION BAR HELPER ────────────────────────────────────
             function drawSectionBar(label, posY) {
@@ -1176,15 +1402,25 @@
             const rows = document.querySelectorAll('#tableBody tr');
             const tableData = [];
             rows.forEach((row, index) => {
+                // Rows 4 & 5 (index 3 & 4) use a text input; others use a select
+                const yesNoSelect = row.querySelector('select');
+                const yesNoInput  = row.querySelector('td input[type="text"]');
+                let yesNoVal = '-';
+                if (yesNoSelect) {
+                    yesNoVal = yesNoSelect.value || '-';
+                } else if (yesNoInput) {
+                    yesNoVal = yesNoInput.value || '-';
+                }
                 tableData.push([
                     index + 1,
                     DESCRIPTIONS[index] || '',
+                    yesNoVal,
                     row.querySelector('textarea').value || ''
                 ]);
             });
 
             doc.autoTable({
-                head: [['S.No.', 'Description', 'Remark']],
+                head: [['S.No.', 'Description', 'Yes/No', 'Remark']],
                 body: tableData,
                 startY: y,
                 theme: 'grid',
@@ -1206,8 +1442,9 @@
                 },
                 columnStyles: {
                     0: { cellWidth: 13,  halign: 'center', fillColor: [230, 240, 255] },
-                    1: { cellWidth: 125, halign: 'left'  },
-                    2: { cellWidth: 52,  halign: 'center'}
+                    1: { cellWidth: 105, halign: 'left'  },
+                    2: { cellWidth: 20,  halign: 'center', fillColor: [240, 255, 240] },
+                    3: { cellWidth: 52,  halign: 'center' }
                 },
                 alternateRowStyles: { fillColor: lightBlue },
                 margin: { left: margin, right: margin }
@@ -1259,40 +1496,51 @@
 
             yPos += barH + boxH + 5;
 
-            // ── FOOTER ROW: Date (left) | Sig+CLI (right, stacked) ────
-            // Layout:
-            //   LEFT  zone: "Date: XXXX"
-            //   RIGHT zone: [Signature image]
-            //               [CLI Name text]  — stacked vertically, no overlap
-
+            // ── FOOTER ROW: Date (left) | Sig1+CLI1 (centre) | Sig2+CLI2 (right) ──
             const sigW     = 42;
             const sigH     = 14;
-            const sigX     = pageWidth - margin - sigW;   // right-aligned
+            const sig1X    = margin + (contentWidth / 4) - (sigW / 2);   // 1st quarter centre
+            const sig2X    = margin + (3 * contentWidth / 4) - (sigW / 2); // 3rd quarter centre
 
-            const signatureFile = document.getElementById('signature').files[0];
+            const cliName2Val = document.getElementById('cliName2') ? document.getElementById('cliName2').value || '' : '';
+            const signatureFile  = document.getElementById('signature').files[0];
+            const signatureFile2 = document.getElementById('signature2') ? document.getElementById('signature2').files[0] : null;
 
-            function drawFooterRow(sigImgDataUrl) {
-                // RIGHT: signature image (top of right zone)
+            function drawFooterRow(sigImgDataUrl, sigImgDataUrl2) {
+                // CLI 1 — left zone
                 if (sigImgDataUrl) {
-                    doc.addImage(sigImgDataUrl, 'PNG', sigX, yPos, sigW, sigH);
+                    try { doc.addImage(sigImgDataUrl, 'PNG', sig1X, yPos, sigW, sigH); } catch(e) {}
                 }
-
-                // RIGHT: CLI name BELOW signature with clear gap
-                const cliY = yPos + sigH + 3;
+                const cli1Y = yPos + sigH + 3;
                 if (cliName) {
                     doc.setFontSize(FS_FIELD);
                     doc.setFont(undefined, 'bold');
                     doc.setTextColor(20, 20, 20);
                     const cliLines = doc.splitTextToSize(cliName, sigW + 10);
-                    doc.text(cliLines, sigX + sigW / 2, cliY, { align: 'center' });
+                    doc.text(cliLines, sig1X + sigW / 2, cli1Y, { align: 'center' });
                 }
+                // Label under CLI 1
+                doc.setFontSize(7);
+                doc.setFont(undefined, 'normal');
+                doc.setTextColor(80, 80, 80);
+                doc.text('CLI - 1', sig1X + sigW / 2, cli1Y + 5, { align: 'center' });
 
-                // LEFT: Date — vertically aligned to middle of sig area
-                const today = new Date().toISOString().split('T')[0];
-                doc.setFontSize(FS_FIELD);
-                doc.setFont(undefined, 'bold');
-                doc.setTextColor(20, 20, 20);
-                doc.text('Date: ' + today, margin, yPos + sigH / 2 + 1);
+                // CLI 2 — right zone
+                if (sigImgDataUrl2) {
+                    try { doc.addImage(sigImgDataUrl2, 'PNG', sig2X, yPos, sigW, sigH); } catch(e) {}
+                }
+                const cli2Y = yPos + sigH + 3;
+                if (cliName2Val) {
+                    doc.setFontSize(FS_FIELD);
+                    doc.setFont(undefined, 'bold');
+                    doc.setTextColor(20, 20, 20);
+                    const cli2Lines = doc.splitTextToSize(cliName2Val, sigW + 10);
+                    doc.text(cli2Lines, sig2X + sigW / 2, cli2Y, { align: 'center' });
+                }
+                doc.setFontSize(7);
+                doc.setFont(undefined, 'normal');
+                doc.setTextColor(80, 80, 80);
+                doc.text('CLI - 2', sig2X + sigW / 2, cli2Y + 5, { align: 'center' });
             }
 
             function addGoldFooter() {
@@ -1313,19 +1561,23 @@
                 showMessage('PDF generated and downloaded successfully!', 'success');
             }
 
-            if (signatureFile) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    drawFooterRow(e.target.result);
-                    addGoldFooter();
-                    saveDoc();
-                };
-                reader.readAsDataURL(signatureFile);
-            } else {
-                drawFooterRow(null);
+            function readFileAsDataURL(file) {
+                return new Promise((resolve) => {
+                    if (!file) { resolve(null); return; }
+                    const reader = new FileReader();
+                    reader.onload = e => resolve(e.target.result);
+                    reader.readAsDataURL(file);
+                });
+            }
+
+            Promise.all([
+                readFileAsDataURL(signatureFile),
+                readFileAsDataURL(signatureFile2)
+            ]).then(([sig1Data, sig2Data]) => {
+                drawFooterRow(sig1Data, sig2Data);
                 addGoldFooter();
                 saveDoc();
-            }
+            });
         }
 
         function showMessage(text, type) {
@@ -1562,11 +1814,8 @@
             }
         }
 
-        // Set today's date as default
+        // Mobile zoom for table inputs
         document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('formDate').value = new Date().toISOString().split('T')[0];
-
-            // Mobile zoom for table inputs
             document.addEventListener('focus', function(event) {
                 const target = event.target;
                 const isTableInput = target.matches('textarea') && target.closest('td') !== null;
