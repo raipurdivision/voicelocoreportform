@@ -4,6 +4,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -944,7 +945,7 @@
                         👤 CLI - 1
                     </div>
                     <label style="display:block; font-weight:bold; font-size:12px; color:#2c3e50; margin-bottom:4px;">CLI Name and HQ:</label>
-                    <select id="cliName" style="width:100%; padding:8px; border:2px solid #b3d9ff; border-radius:5px; font-size:12px; font-weight:bold; margin-bottom:12px;">
+                    <select id="cliName" onchange="toggleOthersBox('cliName','cliNameOthers')" style="width:100%; padding:8px; border:2px solid #b3d9ff; border-radius:5px; font-size:12px; font-weight:bold; margin-bottom:6px;">
                         <option value="">Select CLI Name and HQ</option>
                         <option value="A K REDDY/CLI/BIA">A K REDDY/CLI/BIA</option>
                         <option value="A.R.TARAM/CLI/BIA">A.R. TARAM/CLI/BIA</option>
@@ -975,7 +976,8 @@
                         <option value="K P LAHARE/CLI/R">K P LAHRE/CLI/BIA</option>
                         <option value="K P HIRWANI/CLI/BYT">K P HIRWANI/CLI/R</option>
                         <option value="K. K. SAHU/CLI/BIA">K. K. SAHU/CLI/BIA</option>
-                        <option value="KHUSAL SINGH/CLI/DRZ">KHUSAL SINGH/CLI/DRZ</option>
+                        <option value="KHUSHAL SINGH/CLI/DRZ">KHUSHAL SINGH/CLI/DRZ</option>
+                            <option value="KAMLESH KUMAR RAJABHOJ/CLI/BIA">KAMLESH KUMAR RAJABHOJ /CLI/BIA</option>
                         <option value="MAHESHWAR/CLI/BIA">MAHESHWAR/CLI/BIA</option>
                         <option value="MANOJ KUMAR SAO/CLI/R">MANOJ KUMAR SAO/CLI/R</option>
                         <option value="MANSUKH LAL CHANDRAKAR/CLI/R">MANSUKH LAL CHANDRAKAR/CLI/R</option>
@@ -1017,6 +1019,7 @@
                         <option value="YOGESH KUMAR MIHAULIA/CLI/BIA">YOGESH KUMAR MIHAULIA/CLI/BIA</option>
                         <option value="OTHERS">OTHERS</option>
                     </select>
+                    <input type="text" id="cliNameOthers" placeholder="✏️ Type CLI Name &amp; HQ here..." oninput="autoSaveDraft()" style="display:none; width:100%; padding:8px; border:2px solid #e67e22; border-radius:5px; font-size:12px; font-weight:bold; margin-bottom:8px; text-transform:uppercase; background:#fff8f0;">
                     <label style="display:block; font-weight:bold; font-size:12px; color:#2c3e50; margin-bottom:4px;">Upload Signature - 1:</label>
                     <input type="file" id="signature" accept="image/*" onchange="previewSignature(event)" style="width:100%; font-size:12px;">
                     <div id="signaturePreview" style="margin-top:8px; display:none; text-align:center;">
@@ -1030,7 +1033,7 @@
                         👤 CLI - 2
                     </div>
                     <label style="display:block; font-weight:bold; font-size:12px; color:#2c3e50; margin-bottom:4px;">CLI Name and HQ:</label>
-                    <select id="cliName2" style="width:100%; padding:8px; border:2px solid #ffe082; border-radius:5px; font-size:12px; font-weight:bold; margin-bottom:12px;">
+                    <select id="cliName2" onchange="toggleOthersBox('cliName2','cliName2Others')" style="width:100%; padding:8px; border:2px solid #ffe082; border-radius:5px; font-size:12px; font-weight:bold; margin-bottom:6px;">
                         <option value="">Select CLI Name and HQ</option>
                         <option value="A K REDDY/CLI/BIA">A K REDDY/CLI/BIA</option>
                         <option value="A.R.TARAM/CLI/BIA">A.R. TARAM/CLI/BIA</option>
@@ -1061,7 +1064,8 @@
                         <option value="K P LAHARE/CLI/R">K P LAHRE/CLI/BIA</option>
                         <option value="K P HIRWANI/CLI/BYT">K P HIRWANI/CLI/R</option>
                         <option value="K. K. SAHU/CLI/BIA">K. K. SAHU/CLI/BIA</option>
-                        <option value="KHUSAL SINGH/CLI/DRZ">KHUSAL SINGH/CLI/DRZ</option>
+                        <option value="KHUSHAL SINGH/CLI/DRZ">KHUSHAL SINGH/CLI/DRZ</option>
+                          <option value="KAMLESH KUMAR RAJABHOJ/CLI/BIA">KAMLESH KUMAR RAJABHOJ /CLI/BIA</option>
                         <option value="MAHESHWAR/CLI/BIA">MAHESHWAR/CLI/BIA</option>
                         <option value="MANOJ KUMAR SAO/CLI/R">MANOJ KUMAR SAO/CLI/R</option>
                         <option value="MANSUKH LAL CHANDRAKAR/CLI/R">MANSUKH LAL CHANDRAKAR/CLI/R</option>
@@ -1103,6 +1107,7 @@
                         <option value="YOGESH KUMAR MIHAULIA/CLI/BIA">YOGESH KUMAR MIHAULIA/CLI/BIA</option>
                         <option value="OTHERS">OTHERS</option>
                     </select>
+                    <input type="text" id="cliName2Others" placeholder="✏️ Type CLI Name &amp; HQ here..." oninput="autoSaveDraft()" style="display:none; width:100%; padding:8px; border:2px solid #e67e22; border-radius:5px; font-size:12px; font-weight:bold; margin-bottom:8px; text-transform:uppercase; background:#fff8f0;">
                     <label style="display:block; font-weight:bold; font-size:12px; color:#2c3e50; margin-bottom:4px;">Upload Signature - 2:</label>
                     <input type="file" id="signature2" accept="image/*" onchange="previewSignature2(event)" style="width:100%; font-size:12px;">
                     <div id="signaturePreview2" style="margin-top:8px; display:none; text-align:center;">
@@ -1116,9 +1121,14 @@
 
             <div id="message" class="message"></div>
 
+            <!-- Auto-save indicator -->
+            <div id="autoSaveIndicator" style="text-align:center; font-size:11px; font-weight:bold; color:#27ae60; margin-bottom:6px; display:none;">
+                ✅ Auto-saved
+            </div>
             <div class="button-group">
-                <button class="save-draft-btn" onclick="saveDraft()">Save Draft</button>
-                <button class="upload-draft-btn" onclick="document.getElementById('draftFileInput').click()">Upload Draft</button>
+                <button class="save-draft-btn" onclick="saveDraft()">💾 Save Draft</button>
+                <button class="upload-draft-btn" onclick="document.getElementById('draftFileInput').click()">📂 Upload Draft</button>
+                <button onclick="clearAutoSavedDraft()" style="padding:11px 18px; font-size:0.88em; font-weight:bold; border:none; border-radius:8px; cursor:pointer; background:linear-gradient(135deg,#e74c3c,#c0392b); color:#fff; letter-spacing:1px; box-shadow:0 4px 10px rgba(0,0,0,0.2); text-transform:uppercase;">🗑️ Clear Draft</button>
                 <button class="submit-btn" onclick="submitForm()">Submit</button>
                 <button class="pdf-btn" onclick="generatePDF()">Generate PDF</button>
             </div>
@@ -1201,8 +1211,8 @@
                 records: [],
                 irregularities: document.getElementById('irregularities').value,
                 otherRemarks: document.getElementById('otherRemarks').value,
-                cliName: document.getElementById('cliName').value,
-                cliName2: document.getElementById('cliName2').value
+                cliName: getCLIName('cliName','cliNameOthers'),
+                cliName2: getCLIName('cliName2','cliName2Others')
             };
 
             rows.forEach((row, index) => {
@@ -1282,7 +1292,7 @@
             const stablingDateTime = document.getElementById('stablingDateTime').value || '';
             const irregularities   = document.getElementById('irregularities').value || '';
             const otherRemarks     = document.getElementById('otherRemarks').value || '';
-            const cliName          = document.getElementById('cliName').value || '';
+            const cliName          = getCLIName('cliName','cliNameOthers') || '';
 
             // ── LAYOUT CONSTANTS ──────────────────────────────────────
             const FS_TITLE    = 17;
@@ -1502,7 +1512,7 @@
             const sig1X    = margin + (contentWidth / 4) - (sigW / 2);   // 1st quarter centre
             const sig2X    = margin + (3 * contentWidth / 4) - (sigW / 2); // 3rd quarter centre
 
-            const cliName2Val = document.getElementById('cliName2') ? document.getElementById('cliName2').value || '' : '';
+            const cliName2Val = getCLIName('cliName2','cliName2Others') || '';
             const signatureFile  = document.getElementById('signature').files[0];
             const signatureFile2 = document.getElementById('signature2') ? document.getElementById('signature2').files[0] : null;
 
@@ -1519,11 +1529,7 @@
                     const cliLines = doc.splitTextToSize(cliName, sigW + 10);
                     doc.text(cliLines, sig1X + sigW / 2, cli1Y, { align: 'center' });
                 }
-                // Label under CLI 1
-                doc.setFontSize(7);
-                doc.setFont(undefined, 'normal');
-                doc.setTextColor(80, 80, 80);
-                doc.text('CLI - 1', sig1X + sigW / 2, cli1Y + 5, { align: 'center' });
+
 
                 // CLI 2 — right zone
                 if (sigImgDataUrl2) {
@@ -1537,10 +1543,7 @@
                     const cli2Lines = doc.splitTextToSize(cliName2Val, sigW + 10);
                     doc.text(cli2Lines, sig2X + sigW / 2, cli2Y, { align: 'center' });
                 }
-                doc.setFontSize(7);
-                doc.setFont(undefined, 'normal');
-                doc.setTextColor(80, 80, 80);
-                doc.text('CLI - 2', sig2X + sigW / 2, cli2Y + 5, { align: 'center' });
+
             }
 
             function addGoldFooter() {
@@ -1609,7 +1612,7 @@
                 tableData: tableData,
                 irregularities: document.getElementById('irregularities').value || '',
                 otherRemarks: document.getElementById('otherRemarks').value || '',
-                cliName: document.getElementById('cliName').value || ''
+                cliName: getCLIName('cliName','cliNameOthers') || ''
             };
 
             const blob = new Blob([JSON.stringify(draftData, null, 2)], { type: 'application/json' });
@@ -1824,6 +1827,188 @@
                 }
             }, true);
         });
+        // ── OTHERS textbox toggle ─────────────────────────────────────────────
+        function toggleOthersBox(selectId, textBoxId) {
+            const sel = document.getElementById(selectId);
+            const box = document.getElementById(textBoxId);
+            if (!sel || !box) return;
+            if (sel.value === 'OTHERS') {
+                box.style.display = 'block';
+                box.focus();
+            } else {
+                box.style.display = 'none';
+                box.value = '';
+            }
+            autoSaveDraft();
+        }
+
+        function getCLIName(selectId, othersId) {
+            const sel = document.getElementById(selectId);
+            if (sel && sel.value === 'OTHERS') {
+                const box = document.getElementById(othersId);
+                return box ? box.value.trim().toUpperCase() : '';
+            }
+            return sel ? sel.value : '';
+        }
+
+        // ── AUTO-SAVE to localStorage ─────────────────────────────────────────
+        const AUTO_SAVE_KEY = 'ambush_stable_load_autosave';
+
+        function collectFormData() {
+            const rows = document.querySelectorAll('#tableBody tr');
+            const tableData = [];
+            rows.forEach(row => {
+                const sel = row.querySelector('select');
+                const txt = row.querySelector('textarea');
+                const inp = row.querySelector('input[type="text"]');
+                tableData.push({
+                    yesNo: sel ? sel.value : '',
+                    remark: txt ? txt.value : '',
+                    inputVal: inp ? inp.value : ''
+                });
+            });
+            return {
+                formDate: document.getElementById('formDate').value || '',
+                formTime: document.getElementById('formTime').value || '',
+                place: document.getElementById('place').value || '',
+                lineNo: document.getElementById('lineNo').value || '',
+                trainNo: document.getElementById('trainNo').value || '',
+                load: document.getElementById('load').value || '',
+                bpcNo: document.getElementById('bpcNo').value || '',
+                staff1: document.getElementById('staff1').value || '',
+                staff2: document.getElementById('staff2').value || '',
+                stablingDateTime: document.getElementById('stablingDateTime').value || '',
+                irregularities: document.getElementById('irregularities').value || '',
+                otherRemarks: document.getElementById('otherRemarks').value || '',
+                cliName: getCLIName('cliName','cliNameOthers') || '',
+                cliNameOthers: document.getElementById('cliNameOthers') ? document.getElementById('cliNameOthers').value || '' : '',
+                cliName2: document.getElementById('cliName2') ? document.getElementById('cliName2').value || '' : '',
+                cliName2Others: document.getElementById('cliName2Others') ? document.getElementById('cliName2Others').value || '' : '',
+                tableData: tableData,
+                savedAt: new Date().toLocaleString()
+            };
+        }
+
+        function autoSaveDraft() {
+            try {
+                localStorage.setItem(AUTO_SAVE_KEY, JSON.stringify(collectFormData()));
+                const ind = document.getElementById('autoSaveIndicator');
+                if (ind) {
+                    ind.style.display = 'block';
+                    clearTimeout(ind._timer);
+                    ind._timer = setTimeout(() => { ind.style.display = 'none'; }, 2000);
+                }
+            } catch(e) { /* storage full or private mode */ }
+        }
+
+        function restoreAutoSavedDraft() {
+            try {
+                const raw = localStorage.getItem(AUTO_SAVE_KEY);
+                if (!raw) return;
+                const d = JSON.parse(raw);
+
+                const setVal = (id, val) => { const el = document.getElementById(id); if (el) el.value = val || ''; };
+                setVal('formDate', d.formDate);
+                setVal('formTime', d.formTime);
+                setVal('place', d.place);
+                setVal('lineNo', d.lineNo);
+                setVal('trainNo', d.trainNo);
+                setVal('load', d.load);
+                setVal('bpcNo', d.bpcNo);
+                setVal('staff1', d.staff1);
+                setVal('staff2', d.staff2);
+                setVal('stablingDateTime', d.stablingDateTime);
+                setVal('irregularities', d.irregularities);
+                setVal('otherRemarks', d.otherRemarks);
+
+                // CLI dropdowns + others boxes
+                if (d.cliName) {
+                    setVal('cliName', d.cliName);
+                    if (d.cliName === 'OTHERS' && d.cliNameOthers) {
+                        const box = document.getElementById('cliNameOthers');
+                        if (box) { box.style.display = 'block'; box.value = d.cliNameOthers; }
+                    }
+                }
+                if (d.cliName2) {
+                    setVal('cliName2', d.cliName2);
+                    if (d.cliName2 === 'OTHERS' && d.cliName2Others) {
+                        const box = document.getElementById('cliName2Others');
+                        if (box) { box.style.display = 'block'; box.value = d.cliName2Others; }
+                    }
+                }
+
+                // Table rows
+                if (d.tableData) {
+                    const rows = document.querySelectorAll('#tableBody tr');
+                    d.tableData.forEach((rowData, i) => {
+                        if (!rows[i]) return;
+                        const sel = rows[i].querySelector('select');
+                        const txt = rows[i].querySelector('textarea');
+                        const inp = rows[i].querySelector('input[type="text"]');
+                        if (sel && rowData.yesNo !== undefined) sel.value = rowData.yesNo;
+                        if (txt && rowData.remark !== undefined) txt.value = rowData.remark;
+                        if (inp && rowData.inputVal !== undefined) inp.value = rowData.inputVal;
+                    });
+                }
+
+                if (d.savedAt) {
+                    showMessage('📂 Draft restored from ' + d.savedAt, 'success');
+                }
+            } catch(e) { /* corrupted data */ }
+        }
+
+        function clearAutoSavedDraft() {
+            if (!confirm('Delete the auto-saved draft? This cannot be undone.')) return;
+            localStorage.removeItem(AUTO_SAVE_KEY);
+
+            // Clear all form fields
+            ['formDate','formTime','place','lineNo','trainNo','load','bpcNo',
+             'staff1','staff2','stablingDateTime','irregularities','otherRemarks'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.value = '';
+            });
+            ['cliName','cliName2'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.value = '';
+            });
+            ['cliNameOthers','cliName2Others'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) { el.value = ''; el.style.display = 'none'; }
+            });
+            document.querySelectorAll('#tableBody tr').forEach(row => {
+                const sel = row.querySelector('select');
+                const txt = row.querySelector('textarea');
+                const inp = row.querySelector('input[type="text"]');
+                if (sel) sel.value = '';
+                if (txt) txt.value = '';
+                if (inp) inp.value = '';
+            });
+            showMessage('🗑️ Draft cleared!', 'success');
+        }
+
+        // Attach auto-save listeners once DOM is ready
+        function attachAutoSaveListeners() {
+            document.querySelectorAll('input[type="text"], input[type="date"], textarea, select').forEach(el => {
+                el.addEventListener('input', autoSaveDraft);
+                el.addEventListener('change', autoSaveDraft);
+            });
+            // Also observe dynamic additions (table rows added later)
+            new MutationObserver(() => {
+                document.querySelectorAll('#tableBody input, #tableBody textarea, #tableBody select').forEach(el => {
+                    if (!el._autoSaveAttached) {
+                        el._autoSaveAttached = true;
+                        el.addEventListener('input', autoSaveDraft);
+                        el.addEventListener('change', autoSaveDraft);
+                    }
+                });
+            }).observe(document.getElementById('tableBody'), { childList: true });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            restoreAutoSavedDraft();
+            attachAutoSaveListeners();
+        });
+
     </script>
 </body>
 </html>
